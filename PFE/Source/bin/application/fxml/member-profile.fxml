@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #eccc68;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MemberProfilController">
+   <children>
+      <BorderPane layoutX="180.0" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="660.0" prefWidth="1088.0" stylesheets="@../css/general.css" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="18.0">
+         <center>
+            <AnchorPane prefHeight="583.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane layoutX="-9.0" layoutY="-9.0" prefWidth="1088.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <FlowPane hgap="20.0" prefHeight="756.0" prefWidth="1065.0" vgap="20.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="545.0" prefWidth="254.0" spacing="5.0" styleClass="normal-box">
+                                 <children>
+                                    <ImageView fitHeight="126.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/female.png" />
+                                       </image>
+                                    </ImageView>
+                                    <AnchorPane prefHeight="280.0" prefWidth="254.0">
+                                       <children>
+                                          <HBox alignment="CENTER" layoutX="-1.0" layoutY="14.0" prefHeight="32.0" prefWidth="255.0">
+                                             <children>
+                                                <Label fx:id="fullname" alignment="CENTER" contentDisplay="CENTER" text="Rachida Moutawakil">
+                                                   <font>
+                                                      <Font name="System Bold" size="22.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" layoutX="14.0" layoutY="68.0" prefHeight="50.0" prefWidth="183.0" spacing="10.0">
+                                             <children>
+                                                <ImageView fitHeight="53.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../assets/medal1.gif" />
+                                                   </image>
+                                                </ImageView>
+                                                <Separator orientation="VERTICAL" prefHeight="102.0" prefWidth="0.0" />
+                                                <ImageView fitHeight="63.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../assets/medal2.gif" />
+                                                   </image>
+                                                </ImageView>
+                                                <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../assets/crown.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <FlowPane.margin>
+                                    <Insets left="15.0" />
+                                 </FlowPane.margin>
+                              </VBox>
+                              <VBox prefHeight="545.0" prefWidth="773.0" spacing="20.0">
+                                 <children>
+                                    <AnchorPane prefHeight="229.0" prefWidth="773.0" styleClass="normal-box">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="14.0" text="About" underline="true">
+                                             <font>
+                                                <Font name="System Bold" size="21.0" />
+                                             </font>
+                                          </Label>
+                                          <FlowPane hgap="30.0" layoutX="61.0" layoutY="57.0" prefHeight="163.0" prefWidth="645.0" vgap="15.0">
+                                             <children>
+                                                <VBox alignment="CENTER" spacing="3.0">
+                                                   <children>
+                                                      <Label text="Pénom" />
+                                                      <TextField fx:id="prenom_txt" alignment="CENTER" disable="true" styleClass="form-entry" text="Rachida" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" spacing="3.0">
+                                                   <children>
+                                                      <Label text="Nom" />
+                                                      <TextField fx:id="nom_txt" alignment="CENTER" disable="true" styleClass="form-entry" text="Rachida" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" spacing="3.0">
+                                                   <children>
+                                                      <Label text="Telephone" />
+                                                      <TextField fx:id="phone_txt" alignment="CENTER" disable="true" styleClass="form-entry" text="0661123456" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" spacing="3.0">
+                                                   <children>
+                                                      <Label text="Date de Naissance" />
+                                                      <DatePicker fx:id="birthday_txt" disable="true" prefHeight="31.0" prefWidth="194.0" styleClass="form-entry" />
+                                                      <Label fx:id="age_txt" text="Age :23 ans " />
+                                                   </children>
+                                                   <FlowPane.margin>
+                                                      <Insets />
+                                                   </FlowPane.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" spacing="3.0">
+                                                   <children>
+                                                      <Label text="Adresse" />
+                                                      <TextField fx:id="address_txt" alignment="CENTER" disable="true" styleClass="form-entry" text="av.Hassan II, Agadir 80000" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" spacing="3.0">
+                                                   <children>
+                                                      <Label text="CIN" />
+                                                      <TextField fx:id="cin_txt" alignment="CENTER" disable="true" styleClass="form-entry" text="ABC6659" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </FlowPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <FlowPane hgap="30.0">
+                                       <children>
+                                          <AnchorPane prefHeight="295.0" prefWidth="541.0" styleClass="normal-box">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="14.0" text="Details" underline="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                                <FlowPane layoutX="54.0" layoutY="53.0" prefHeight="203.0" prefWidth="323.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="240.0" spacing="10.0">
+                                                         <children>
+                                                            <Label text="1ère inscription:" />
+                                                            <Label text="22/02/2021" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="240.0" spacing="10.0">
+                                                         <children>
+                                                            <Label text="Type Sport:" />
+                                                            <Label text="Judo" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="240.0" spacing="10.0">
+                                                         <children>
+                                                            <Label text="First Subscription :" />
+                                                            <Label text="22/02/2021" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </FlowPane>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="normal-box">
+                                             <children>
+                                                <TextArea fx:id="note_txt" disable="true" layoutX="8.0" layoutY="79.0" prefHeight="173.0" prefWidth="185.0" styleClass="form-entry" text="-165 cm&#10;-58 Kg&#10;-Diabetique&#10;-Allergie de gluten" />
+                                                <Label layoutX="76.0" layoutY="14.0" text="Note" underline="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </FlowPane>
+                     </content>
+                  </ScrollPane>
+               </children></AnchorPane>
+         </center>
+         <top>
+            <fx:include source="topbar.fxml" />
+         </top>
+      </BorderPane>
+      <VBox alignment="TOP_CENTER" layoutX="23.0" layoutY="42.0" maxHeight="-Infinity" prefHeight="660.0" prefWidth="144.0" style="-fx-background-color: white; -fx-background-radius: 20;" styleClass="normal-box" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="18.0">
+         <children>
+            <fx:include source="sidebar.fxml" />
+         </children></VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../css/sidebar.css" />
+      <URL value="@../css/general.css" />
+   </stylesheets>
+</AnchorPane>

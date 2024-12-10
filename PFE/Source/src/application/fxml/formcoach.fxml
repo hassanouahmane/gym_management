@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane prefHeight="587.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CoachFormController">
+   <content>
+      <AnchorPane prefHeight="591.0" prefWidth="472.0" styleClass="anchor-pane" stylesheets="@../css/form.css">
+         <children>
+            <Text layoutX="-1.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="coach info">
+               <font>
+                  <Font name="Bauhaus 93" size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="fname2" layoutX="11.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="fname" />
+            <TextField fx:id="fname" layoutX="27.0" layoutY="95.0" prefHeight="25.0" prefWidth="250.0" stylesheets="@../css/form.css" />
+            <Text fx:id="lname2" layoutX="12.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="lname" />
+            <Text fx:id="phone2" layoutX="11.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="phone" />
+            <TextField fx:id="phone" layoutX="27.0" layoutY="260.0" prefHeight="25.0" prefWidth="253.0" />
+            <Button fx:id="saveBtn" layoutX="261.0" layoutY="527.0" mnemonicParsing="false" onAction="#save" text="save" />
+            <Button fx:id="cleanBtn" layoutX="346.0" layoutY="527.0" mnemonicParsing="false" onAction="#clean" text="clean" />
+            <TextField fx:id="lname" layoutX="27.0" layoutY="166.0" prefHeight="25.0" prefWidth="248.0" />
+            <Text fx:id="identityt" layoutX="12.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="CIN" />
+            <TextField fx:id="identity" layoutX="27.0" layoutY="358.0" />
+            <Text fx:id="sportIdField2" layoutX="16.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Sport" />
+            <ComboBox fx:id="sportIdField" layoutX="27.0" layoutY="435.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

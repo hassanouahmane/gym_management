@@ -1,0 +1,347 @@
+.white-color {
+	-fx-background-color: #fff;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.1), 10.0, 0.0, 5.0, 5.0);
+}
+
+.transparent {
+	-fx-background-color: rgba(0.0,0.0,0.0,0.0);
+}
+
+.black-color {
+	-fx-background-color: #000;
+}
+
+.box {
+    -fx-background-radius: 20.0px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 10.0, 0.0, 0.0, 0.0);
+}
+
+.rad-ntopRight {
+	-fx-background-radius: 0.0 20.0px 20.0px 20.0px;
+}
+
+.members {
+	-fx-effect: innershadow(gaussian, #1e90ff, 90.0, 0.0, 0.0, 0.0);
+}
+
+.coachs {
+	-fx-effect: innershadow(gaussian, #2f3542, 90.0, 0.0, 0.0, 0.0);
+}
+
+.equipement {
+	-fx-effect: innershadow(gaussian, #3742fa, 90.0, 0.0, 0.0, 0.0);
+}
+
+.sales {
+	-fx-effect: innershadow(gaussian, #747d8c, 90.0, 0.0, 0.0, 0.0);
+}
+
+.revenue {
+	-fx-effect: innershadow(gaussian, #2ed573, 90.0, 0.0, 0.0, 0.0);
+}
+
+.numbers {
+    -fx-effect: dropshadow(gaussian, rgba(255.0, 255.0, 255.0, 0.8), 5.0, 0.5, 0.0, 0.0),
+        dropshadow(three-pass-box, derive(red, -20.0%), 5.0, 0.8, 0.0, 0.0);
+}
+
+.black-numbers {
+    -fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.3), 5.0, 0.5, 0.0, 0.0),
+        dropshadow(three-pass-box, derive(black, -20.0%), 10.0, 0.5, 0.0, 0.0);
+}
+
+.searchField {
+	-fx-background-color: #f0f0f0;
+	-fx-background-radius: 50.0px;
+}
+
+.field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0.0;
+}
+
+.check-box .box {
+    -fx-background-color: #fff;
+    -fx-border-color: #333;
+    -fx-border-width: 1.0;
+    -fx-border-radius: 50.0%;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.0), 0.0, 0.0, 0.0, 0.0);
+}
+
+.cursor:hover {
+	-fx-cursor: hand;
+}
+
+/* *********************************************************** */
+/* SCROLL PANE */
+
+.scroll-pane {
+    -fx-background-color: rgba(0.0,0.0,0.0,0.0);
+    -fx-background-insets: 0.0;
+}
+
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0.0;
+}
+
+.scroll-pane .scroll-bar:horizontal .increment-button,
+.scroll-pane .scroll-bar:horizontal .decrement-button,
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0.0;
+}
+
+.scroll-pane .scroll-bar:horizontal .increment-arrow,
+.scroll-pane .scroll-bar:horizontal .decrement-arrow,
+.scroll-pane .scroll-bar:vertical .increment-arrow,
+.scroll-pane .scroll-bar:vertical .decrement-arrow {
+    -fx-shape: " ";
+}
+
+.scroll-pane .scroll-bar:horizontal .track,
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0.0;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb,
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(0.0,0.0,0.0,0.09);
+    -fx-padding: 0.0;
+}
+
+/* *********************************************************** */
+/* CHART */
+
+.chart-content {
+    -fx-background-color: transparent;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-vertical-grid-lines {
+    -fx-background-color: transparent;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-background-color: rgba(255.0, 255.0, 255.0, 0.1);
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 5.0;
+}
+
+/* *********************************************************** */
+/* Table View */
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10.0px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #ffffff; /* Header background color */
+    -fx-padding: 0 5px 5px 5px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #ffffff; /* Header text color */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #ffffff; /* Odd row background color */
+}
+
+.table-row-cell:even {
+    -fx-background-color: #ffffff; /* Even row background color */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #7bed9f; /* Selected row background color */
+}
+
+.table-cell {
+    -fx-alignment: center; /* Cell text alignment */
+    -fx-padding: 2px 5px; /* Cell padding */
+    -fx-text-fill: black; /* Text color */
+}
+
+/* *********************************************************** */
+/* TABPANE */
+
+.tab-pane .tab-header-area {
+    -fx-alignment: CENTER;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0.0;
+}
+
+.tab-pane {
+    -fx-tab-min-width: 120.0px;
+}
+
+.tab {
+    -fx-background-radius: 20.0px;
+    -fx-background-insets: 1.5px 5px, 0.0, 0.0;
+    -fx-padding: 5.0px 0.0px 5.0px 0.0px;
+    -fx-background-color: #dfe4ea;
+    -fx-border-color: transparent;
+}
+
+.tab:selected {
+    -fx-background-color: #ffa502;
+    -fx-border-color: transparent;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #747d8c;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #a4b0be;
+    -fx-border-color: transparent;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0px, 10px 5px 5px 10px;
+    -fx-padding: 0.416667em 0.166667em 0.0em 1.98em;
+    -fx-border-width: 0.0;
+    -fx-border-color: transparent;
+}
+
+.tab:hover {
+    -fx-background-color: #ffa502;
+}
+
+.tab:hover .tab-label {
+    -fx-text-fill: #a4b0be;
+}
+
+.tab-pane .tab .tab-background,
+.tab-pane .tab .focus-indicator {
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+/***************************************************/
+/* COMBOBOX */
+.combo-box {
+    -fx-font-size: 12px;
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-padding: 0px 5px;
+}
+.combo-box:hover {
+    -fx-border-color: #333;
+}
+.combo-box .arrow {
+	-fx-shape: "M0 -2 L4 -2 L2 2 Z";
+    -fx-fill: #aaa;
+    -fx-smooth: true;
+    -fx-alignment: center-right;
+    -fx-padding: 3px 5px;
+}
+.combo-box .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333 !important;
+    -fx-background-color: white;
+    -fx-alignment: center;
+}
+.combo-box .list-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+.combo-box .list-cell {
+    -fx-padding: 5px;
+    -fx-background-color: white;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-alignment: center;
+    -fx-text-fill: #333;
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: #ffa502;
+    -fx-text-fill: #333;
+}
+
+/************************ */
+/* Button */
+
+.button {
+	-fx-background-radius: 20.0px;
+    -fx-background-insets: 1.5px 5px, 0.0, 0.0;
+    -fx-padding: 5.0px 0.0px 5.0px 0.0px;
+    -fx-background-color: #dfe4ea;
+    -fx-border-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-text-fill: #747d8c;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+	-fx-background-color: #ffa502;
+	-fx-text-fill: #a4b0be;
+}
+
+/**************************** */
+/* menu item */
+
+.context-menu {
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-border-width: 0px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+}
+
+.context-menu .menu-item {
+    -fx-padding: 0 5px;
+    -fx-background-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-alignment: center;
+    -fx-text-fill: #333;
+}
+
+.context-menu .menu-item:hover {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #333;
+}
+
+.context-menu .menu-item:focused {
+    -fx-background-color: #ffa502;
+    -fx-text-fill: #333;
+}
+
+.context-menu .menu-item .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333 !important;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-padding: 5px;
+}
+
+.context-menu .menu-item .graphic {
+    -fx-padding: 0 5px;
+}

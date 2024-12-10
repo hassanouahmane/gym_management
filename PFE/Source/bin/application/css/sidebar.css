@@ -1,0 +1,19 @@
+.sidebtn {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.sidebtn:hover {
+    -fx-background-color: #f1f2f6;
+    -fx-text-fill: #ffa502;
+}
+
+.sidebtn-ico {
+    -fx-fill: black;
+}
+
+.sidebtn:hover .sidebtn-ico {
+    -fx-fill: #ffa502;
+}
+

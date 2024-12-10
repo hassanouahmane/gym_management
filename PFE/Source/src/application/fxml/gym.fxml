@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<ScrollPane prefHeight="593.0" prefWidth="1223.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GymController">
+   <content>
+      <AnchorPane prefHeight="583.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/general.css">
+         <children>
+            <TabPane fx:id="tabpane" layoutX="2.0" layoutY="42.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="786.0" prefWidth="1201.0" tabClosingPolicy="UNAVAILABLE" />
+            <Button layoutX="973.0" layoutY="11.0" mnemonicParsing="false" onAction="#new_sport" text="New Sport" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

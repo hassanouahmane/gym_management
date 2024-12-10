@@ -1,0 +1,96 @@
+/* Stylesheet for formadherent.fxml, inspired by general.css */
+
+/* Define styles for text elements */
+.text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Text color */
+}
+
+/* Define styles for text fields */
+.text-field {
+    -fx-background-color: #ffffff; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #dddddd; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-padding: 5px; /* Padding */
+    -fx-font-size: 14px;
+}
+
+/* Define styles for combo box */
+.combo-box {
+    -fx-background-color: #ffffff; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #dddddd; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-font-size: 14px;
+}
+
+/* Define styles for radio buttons */
+.radio-button {
+    -fx-text-fill: black;
+    -fx-padding: 5px 5px 5px 5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+
+/* Define styles for buttons */
+.button {
+    -fx-background-color: #fa8231; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 5px 15px; /* Padding */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #fd9644; /* Background color on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #df7d2e; /* Background color when pressed */
+}
+
+/* Define styles for text area */
+.text-area {
+    -fx-background-color: #ffffff; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #dddddd; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-padding: 5px; /* Padding */
+    -fx-font-size: 14px;
+}
+
+/* Define styles for scroll pane */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:horizontal .increment-button,
+.scroll-pane .scroll-bar:horizontal .decrement-button,
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:horizontal .track,
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb,
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(0.0,0.0,0.0,0.09);
+    -fx-padding: 0;
+}
+

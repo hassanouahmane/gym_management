@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane prefHeight="593.0" prefWidth="1223.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdherentController">
+   <content>
+      <AnchorPane prefHeight="591.0" prefWidth="1158.0">
+         <children>
+            <FlowPane fx:id="modibtn" alignment="CENTER" columnHalignment="CENTER" layoutY="-6.0" orientation="VERTICAL" prefHeight="583.0" prefWidth="1100.0" style="-fx-background-color: white;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <HBox spacing="20.0">
+                     <children>
+                        <Button fx:id="adduserbtn" mnemonicParsing="false" onAction="#adduser" style="-fx-background-color: #70a1ff;" text="Ajouter Consignation" />
+                        <Button fx:id="csv" mnemonicParsing="false" onAction="#exportToCSV" style="-fx-background-color: #70a1ff;" text=" fichier csv" />
+                     </children>
+                  </HBox>
+                  <VBox>
+                     <children>
+                        <TableView fx:id="tableView" prefHeight="495.0" prefWidth="1188.0" stylesheets="@../css/tableau.css">
+                           <columns>
+                              <TableColumn fx:id="DateColumn" prefWidth="134.0" text="Date" />
+                              <TableColumn fx:id="LocalisationColumn" prefWidth="131.0" text="Localisation" />
+                              <TableColumn fx:id="ExploitantColumn" prefWidth="91.0" text="Exploitant" />
+                              <TableColumn fx:id="NumeroBoiteColumn" prefWidth="118.0" text="N° Boite" />
+                              <TableColumn fx:id="NumeroAttestationColumn" prefWidth="99.0" text="N° attestation" />
+                              <TableColumn fx:id="EquipementColumn" prefWidth="110.0" text="Equipement" />
+                              <TableColumn fx:id="RepereMachineColumn" minWidth="0.0" prefWidth="174.0" text="Repère Machine" />
+                              <TableColumn fx:id="NumeroCadnatColumn" prefWidth="198.0" text="N° cadnat" />
+                              <TableColumn fx:id="ChargeConsignationColomn" prefWidth="132.0" text="Chargé Consignation" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </FlowPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

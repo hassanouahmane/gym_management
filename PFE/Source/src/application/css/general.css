@@ -1,0 +1,223 @@
+89 % de l'espace de stockage utilisés … Une fois la limite atteinte, vous ne pouvez plus créer, modifier ni importer de fichiers. Profitez de 100 Go de stockage pour 19,00 MAD 0 MAD pendant 1 mois.
+general.css
+/*  O   M   A   R*/
+.listbtn {
+    -fx-background-color: #1e90ff;
+    -fx-text-fill: white;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 25px;
+    -fx-pref-width: 250px; 
+    -fx-font: 22px "Roboto";
+    -fx-cursor: hand; 
+    -fx-border: none; 
+    
+}
+
+.listbtn:hover {
+    -fx-background-color: #1565c0; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 0); 
+}
+
+.listbtn:pressed {
+    -fx-background-color: #0d47a1; 
+}
+
+.content-box {
+    
+    -fx-padding: 20 10px;
+    -fx-border-insets: 20 10px;
+    -fx-background-insets: 20 10px;
+    -fx-background-color:  #dfe4ea; /* Dark background color */
+    -fx-spacing: 10px; /* Spacing between title holder and content */
+    -fx-border-radius: 10px; /* Rounded corners for the content box */
+    -fx-cursor: hand; /* Cursor for better interaction feedback */
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.3), 10, 0, 0, 0);
+}
+
+.content-box:hover {
+    -fx-background-color: #ced6e0; 
+}
+.minicontent-box {
+    -fx-background-color: #7bed9f ; 
+    -fx-border-radius: 5px; 
+}
+
+.content-box:hover .minicontent-box {
+    -fx-background-color: #2ed573; /* Lighter red color on hover */
+}
+
+.content-box:pressed {
+    -fx-background-color: #f1f2f6; /* Darker background color when clicked */
+}
+
+.normal-box {
+    -fx-background-radius: 10px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 133, 133, 0.351), 10, 0, 0, 0);
+}
+
+.form-entry:disabled {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-opacity: 1.0;
+}
+
+.scroll-pane {
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-background-insets: 0.0;
+}
+
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0.0;
+}
+
+.scroll-pane .scroll-bar:horizontal .increment-button,
+.scroll-pane .scroll-bar:horizontal .decrement-button,
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:horizontal .increment-arrow,
+.scroll-pane .scroll-bar:horizontal .decrement-arrow,
+.scroll-pane .scroll-bar:vertical .increment-arrow,
+.scroll-pane .scroll-bar:vertical .decrement-arrow {
+    -fx-shape: " ";
+}
+
+.scroll-pane .scroll-bar:horizontal .track,
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb,
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(0.0,0.0,0.0,0.09);
+    -fx-padding: 0;
+}
+
+/* T A B L E */
+.table-view .column-header-background {
+    -fx-background-color: transparent; /* Header background color */
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent; /* Header text color */
+}
+
+
+
+.table-row-cell:even,.table-row-cell:odd {
+    -fx-background-color: #ffffff; /* Even row background color */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #7bed9f; /* Selected row background color */
+    -fx-text-fill: white; /* Selected row text color */
+}
+
+.table-cell {
+    -fx-alignment: center-left; /* Cell text alignment */
+    -fx-padding: 5px; /* Cell padding */
+}
+
+
+
+
+
+
+
+
+
+
+
+.tab-pane .tab-header-area {
+    -fx-alignment: CENTER;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane {
+    -fx-tab-min-width: 120px;
+}
+
+.tab {
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0 1 0 5, 0, 0;
+    -fx-padding: 5px 0px 5px 0px;
+}
+
+.tab:selected {
+    -fx-background-color: #fa8231;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #3c3c3c;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em;
+}
+
+.tab:hover {
+    -fx-background-color: #a5b1c2;
+}
+
+.tab .tab-label:hover {
+    -fx-text-fill: #3c3c3c;
+}
+
+.tab:selected:hover {
+    -fx-background-color: #fa8231;
+}
+
+.tab:selected:hover .tab-label {
+    -fx-text-fill: white;
+}
+
+.shadow-box {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 133, 133, 0.351), 10, 0, 0, 0);
+    -fx-background-radius: 0 20% 20% 20%;
+    -fx-alignment: center;
+    -fx-effect: innershadow(gaussian, #0b96c9, 90, 0, 0, 0);
+
+}
+
+
+
+.accordion {
+    -fx-border-width: 1;
+    -fx-border-color: gray;
+    -fx-border-insets: 0;
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+}
+
+.accordion .title {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-padding: 0.25em 0.5em;
+    -fx-font-weight: bold;
+}
+
+.accordion .content {
+    -fx-background-color: white;
+    -fx-padding: 0.5em;
+    -fx-font-size: 12px;
+}
